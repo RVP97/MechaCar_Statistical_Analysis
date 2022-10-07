@@ -1,4 +1,4 @@
-# MechaCar_Statistical_Analysis
+# MechaCar Statistical Analysis
 
 ## Linear Regression to Predict MPG
 
@@ -40,3 +40,14 @@ These next images contain the results of the t-test for the first, second, and t
 ![](images/lot3_t_test.png)
 
 - This third lot behaves in a different manner in previous results. This is why there is no surprise that the null hypothesis is rejected in this case, meaning that the sample mean is statistically different than the population mean for the third lot.
+
+## Study Design: MechaCar vs Competition
+
+In the following proposal of a statistical study of hoy MechaCar perform against the competition, several metrics are of great importance for the consumers. The metrics would include:
+
+- Horse Power
+- Average customer satisfaction
+
+The null hypothesis is that horsepower does not impact average customer satisfaction while the alternative hypothesis is that horsepower does impact average customer satisfaction.
+
+I would use a one variable linear regression model since it would try to explain the behavior of the customer satisfaction based on the horsepower. This is quite a simple test but we will also be able to explain its effectiveness based on both the p-value and the r-squared. For this test, we need the average customer satisfaction, either as a number or as a qualitative value that can be converted into an integer. As for the horsepower, the data is already present and no further data gathering would be needed.
