@@ -20,3 +20,23 @@ On the other hand, this next table has the summary statistics from each individu
 
 - Since the design specifications state that "the variance of the suspension coils must not exceed 100 pounds per square inch", it is important to analyze the obtained results.
 - If we were to only look at the summary statistics that encompasses all the lots, then it would look like the variance is below the stated variance. However, the individual lot statistic give a quite different story. Lot 1 and lot 2 have a variance well below the upper limit. As for the third lot, it does not comply with the regulation since its variance is overly high, standing at 170.
+
+## T-Tests on Suspension Coils
+
+The following image contains the results of the t-test for the whole data set without grouping by lot:
+![](images/total_t_test.png)
+
+- There is no evidence to reject the null hypothesis since the p-value (.06028) is greater than are significance value. This means that there is no statistical difference between the sample mean and the presumed population mean.
+
+These next images contain the results of the t-test for the first, second, and third lot, respectively:
+![](images/lot1_t_test.png)
+
+- With a p-value of 1, we are certain to fail to reject the null hypothesis.
+
+![](images/lot2_t_test.png)
+
+- The null hypothesis will also be failed to be rejected since the p-value is higher than our significance level, meaning that it behaves the same as with the results above.
+
+![](images/lot3_t_test.png)
+
+- This third lot behaves in a different manner in previous results. This is why there is no surprise that the null hypothesis is rejected in this case, meaning that the sample mean is statistically different than the population mean for the third lot.
