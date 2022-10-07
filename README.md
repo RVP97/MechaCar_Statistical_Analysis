@@ -5,6 +5,18 @@
 The following is the output of the linear regression used to predict the MPG:
 ![](images/linear_regression.png)
 
-The slope of the linear model is not zero. The null hypothesis is rejected because our p-value is considerably lower than our significance level.
+- The slope of the linear model is not zero. The null hypothesis is rejected because our p-value is considerably lower than our significance level.
 
-As for the variables, the ground clearance and vehicle length are unlikely to provide random amounts of variance. This means that these two have a considerable effect on the MPG.
+- As for the variables, the ground clearance and vehicle length are unlikely to provide random amounts of variance. This means that these two have a considerable effect on the MPG.
+- The linear model decently predicts the MPG of the prototypes. This can be explained with the r squared, which in this case was .6825. This also means that almost 70% of the behavior can be explained by the linear model.
+
+## Summary Statistics on Suspension Coils
+
+The following image includes the summary statistics that compose all of the lots:
+![](images/total_summary.png)
+
+On the other hand, this next table has the summary statistics from each individual lot:
+![](images/lot_summary.png)
+
+- Since the design specifications state that "the variance of the suspension coils must not exceed 100 pounds per square inch", it is important to analyze the obtained results.
+- If we were to only look at the summary statistics that encompasses all the lots, then it would look like the variance is below the stated variance. However, the individual lot statistic give a quite different story. Lot 1 and lot 2 have a variance well below the upper limit. As for the third lot, it does not comply with the regulation since its variance is overly high, standing at 170.
